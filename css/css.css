@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+
+canvas#world {
+    background-color: #ededed;
+    border: 1px solid #222222;
+    margin: 4px;
+}
+
+#game{
+    margin-top: 20px;
+    width: 1024px;
+}
+
+#panel{
+    float:left;
+    min-width: 800px;
+}
+
+#control{
+    float:right;
+    width: 200px;
+}
+
+.clear{
+    clear: both;
+}

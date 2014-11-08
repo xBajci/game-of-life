@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Game of life</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+<div class="container">
+    <div class="row" id="game">
+        <div id="panel">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div>Generation: <span  id="counter" class="badge">0</span></div>
+                    <canvas id="world" width="760" height="480"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div id="control">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Controls
+                </div>
+                <div class="panel-body">
+                    <a href="#" onclick="world.start();">Start</a><br/>
+                    <a href="#" onclick="world.stop();">Stop</a><br/>
+                    <a href="#" onclick="world.reset();">Reset</a><br/>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Templates
+                </div>
+                <div class="panel-body">
+                    <a href="#" onclick="world.createTemplate('Rpentomino');">R-pentomino</a><br/>
+                    <a href="#" onclick="world.createTemplate('Acorn');">Acorn</a><br/>
+                    <a href="#" onclick="world.createTemplate('Rabbits');">Rabbits</a><br/>
+                </div>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="js/world.js"></script>
+<script src="js/gameoflife.js"></script>
+</body>
+</html>
